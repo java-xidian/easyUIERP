@@ -8,15 +8,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * created on 2017年5月29日 
- *
+ * created on 2017年5月29日
+ * <p>
  * session过滤器，修改response对象，设置session超时标识
  *
- * @author  megagao
- * @version  0.0.1
+ * @author megagao
+ * @version 0.0.1
  */
 public class SessionFilter implements Filter {
-
+    @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException,
             ServletException {
 
